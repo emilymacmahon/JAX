@@ -1,0 +1,141 @@
+/* the * is a universal selector and will affect every HTML element on the page*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+#article {
+  padding: 20px;
+
+}
+
+
+
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  
+
+/* nav bar styling */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(46, 116, 112);
+  }
+  
+
+#team{
+  border-radius: 50%;
+  
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 2px;
+  background-color: rgb(46, 116, 112);
+  color: rgb(0, 0, 0);
+}
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+  }
+
+
+  /*media query that makes the columns stack when the window is resized*/
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+  
+  /* creates 4 equal columns for the team images KEEP JUST IN CASE
+  .column-team{
+    align-content: center;
+    float:left;
+    width: 25%;
+    padding:20px;
+  }
+    */
+
+    /*media query that causes the team images to stack when the window is resized
+  @media screen and (max-width: 500px) {
+    .column-team {
+      width: 100%;
+      display:block;
+    }
+  }
+  */
+
+
+
+
+
+
+    /*test code*/
+
+ 
+/*end test code*/
+
+
+
+
+
+
+
+  
+
+
+
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
